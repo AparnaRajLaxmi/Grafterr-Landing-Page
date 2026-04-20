@@ -5,7 +5,7 @@ const getDelay = () => 1000 + Math.random() * 500;
 let _cache = null;
 
 const loadContent = async () => {
-  const res = await fetch('/src/data/content.json');
+  const res = await fetch('/content.json');
   if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
   return res.json();
 };
