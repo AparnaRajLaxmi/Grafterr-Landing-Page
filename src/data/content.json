@@ -1,0 +1,62 @@
+{
+  "navigation": {
+    "logo": { "text": "grafterr" },
+    "links": [
+      { "id": "products", "label": "Products" },
+      { "id": "solutions", "label": "Solutions" }
+    ],
+    "cta": { "label": "Get Started", "href": "#" }
+  },
+  "hero": {
+    "headlinePrefix": "The leading",
+    "headlineGradient": "technology provider",
+    "headlineSuffix": "for restaurants",
+    "subheadline": "Streamline your operations, delight your guests, and grow your restaurant business with our all-in-one platform.",
+    "badge": "Trusted by 2,000+ restaurants",
+    "cta": {
+      "primary": { "label": "Start Free Trial", "href": "#" },
+      "secondary": { "label": "Watch Demo", "href": "#" }
+    }
+  },
+  "featuresSection": {
+    "titlePrefix": "Everything you need to",
+    "titleAccent": "grow your business",
+    "subtitle": "One platform. Infinite possibilities for your restaurant.",
+    "products": [
+      {
+        "id": "pos",
+        "name": "Point of Sale",
+        "tagline": "Lightning-fast transactions",
+        "description": "A sleek, intuitive POS system designed for the pace of modern restaurants. Handle orders, split bills, and process payments without missing a beat.",
+        "gradient": "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)",
+        "accentColor": "#3B82F6",
+        "icon": "🖥️",
+        "features": ["Order management", "Split billing", "Real-time analytics", "Offline mode"]
+      },
+      {
+        "id": "self-service",
+        "name": "Self-Service",
+        "tagline": "Empower your guests",
+        "description": "Let guests order at their own pace with beautiful kiosks and table-side ordering. Reduce wait times and boost average spend.",
+        "gradient": "linear-gradient(135deg, #F97316 0%, #EA580C 100%)",
+        "accentColor": "#F97316",
+        "icon": "📱",
+        "features": ["Kiosk ordering", "Table-side QR", "Menu customization", "Upsell prompts"]
+      },
+      {
+        "id": "kitchen",
+        "name": "Kitchen Management",
+        "tagline": "Precision in every dish",
+        "description": "Keep your kitchen humming with smart ticket management, preparation timers, and real-time order tracking. Eliminate errors and reduce ticket times.",
+        "gradient": "linear-gradient(135deg, #14B8A6 0%, #0F766E 100%)",
+        "accentColor": "#14B8A6",
+        "icon": "👨‍🍳",
+        "features": ["Smart ticket routing", "Prep time tracking", "Station management", "Waste reduction"]
+      }
+    ],
+    "carousel": {
+      "itemsPerView": { "mobile": 1, "tablet": 2, "desktop": 3 },
+      "showArrows": true
+    }
+  }
+}

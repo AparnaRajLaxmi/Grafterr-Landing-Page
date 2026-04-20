@@ -1,0 +1,37 @@
+.errorWrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  padding: 2rem;
+}
+.errorBox {
+  background: var(--color-surface);
+  border: 1px solid rgba(251,113,133,0.2);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  max-width: 420px;
+  text-align: center;
+}
+.errorIcon { font-size: 2.5rem; }
+.errorTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+}
+.errorMsg { color: var(--color-text-secondary); margin-bottom: 2rem; font-size: 0.95rem; }
+.retryBtn {
+  background: var(--gradient-brand);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 200ms, transform 150ms;
+}
+.retryBtn:hover { opacity: 0.9; transform: translateY(-1px); }

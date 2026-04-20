@@ -1,0 +1,72 @@
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
+  position: relative;
+  height: 100%;
+  min-width: 0;
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-border-hover);
+  box-shadow: 0 20px 48px rgba(0,0,0,0.4);
+}
+
+.iconWrap {
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon { font-size: 3.5rem; }
+
+.body { padding: 1.5rem; flex: 1; }
+
+.tagline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.name {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+}
+.description {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.features { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+.featureDot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.glowBar {
+  height: 3px;
+  width: 100%;
+  margin-top: auto;
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+.card:hover .glowBar { opacity: 1; }

@@ -1,0 +1,48 @@
+.carousel { width: 100%; }
+
+.viewport { overflow: hidden; border-radius: 16px; }
+
+.track {
+  display: flex;
+  will-change: transform;
+}
+
+.slide { padding: 0 0.75rem; }
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.arrow {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  font-size: 1.25rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 200ms, border-color 200ms, transform 150ms;
+  cursor: pointer;
+}
+.arrow:hover:not(.disabled) {
+  background: var(--color-surface-2);
+  border-color: var(--color-border-hover);
+  transform: scale(1.08);
+}
+.disabled { opacity: 0.3; cursor: not-allowed; }
+
+.dots { display: flex; gap: 0.5rem; }
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-border-hover);
+  transition: background 200ms, transform 200ms;
+}
+.activeDot {
+  background: var(--color-blue);
+  transform: scale(1.3);
+}
